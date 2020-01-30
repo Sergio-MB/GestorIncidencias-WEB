@@ -3,5 +3,5 @@ Servicio web para la gestión de incidencias en la vía pública. Desarrollado c
 
 ## Documentación
 
-- [Documentación.pdf](/SSW/Entrega final.pdf) - Documentación del servicio web
-- [Script SQL](/SSW/crear tablas.sql) - Creación de tablas
+- [Documentación.pdf](/SSW/Entrega%20final.pdf) - Documentación del servicio web
+- [Script SQL](/SSW/crear%20tablas.sql) - Creación de tablas
