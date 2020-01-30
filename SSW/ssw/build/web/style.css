@@ -1,0 +1,663 @@
+body {
+	margin:0;
+	padding:0;
+	background-color:#fff;
+	font-family: arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+hr {
+	background-color: #7776;
+	border: 0;
+	height: 1px;
+	margin: auto;
+	width: 80%;
+}
+
+#cabecera {
+	height: auto;
+	width:100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin:0px;
+	padding:0px;
+	background-color:#333;
+}
+
+#cabecera a {
+	color: #fff;
+}
+
+#logo {
+	padding:10px;
+}
+
+#logo img {
+	height:60px;
+	vertical-align:middle;
+}
+
+#logo h1 {
+	font-family: "DejaVu Serif", serif;
+	font-size: 40pt;
+	font-weight: bolder;
+	opacity: 0.9;
+	display:inline;
+	vertical-align: middle;
+	margin-left: 0.2em;
+}
+
+#login {
+	margin-right: 40px;
+}
+
+#login img {
+	height: 60px;
+    width: 60px;
+	vertical-align: middle;
+	display: inline-block;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#login #info{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#login h1 {
+	display: inline-block;
+	font-size: 12pt;
+	font-weight: bold;
+	opacity: 0.9;
+	white-space: nowrap;
+}
+
+#login a{
+	opacity: 0.9;
+	font-size: 10pt;
+}
+
+#menu {
+	width: 100%;
+	background:linear-gradient(#f5ca21,#c3a016);
+	border-top: 1px #555 solid;
+	border-bottom: 1px #555 solid;
+	box-shadow: 0px 0px 22px #0005;
+}
+
+#menu ul {
+	max-width: 700px;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+#menu a {
+	white-space: nowrap;
+	vertical-align: middle;
+	height: inherit;
+	opacity: 0.7;
+	text-align: center;
+	padding: 5px;
+	flex: 1 0;
+	font-weight: bold;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in-out;
+	border-right: 1px solid #555;
+}
+
+#menu a:hover {
+	background:linear-gradient(#c3a016,#f5ca21);
+	opacity: 1;
+}
+
+#menu #primer_elemento {
+	border-left: 1px solid #555;
+}
+
+#cuerpo {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin: 0px auto;
+	padding: 20px;
+}
+
+#menu-lateral {
+	width: 150px;
+	padding: 0px;
+	margin: 20px 20px 20px 0px;
+	background-color: #ddd;
+	border: 1px solid #777;
+	border-radius: 4px;
+	box-shadow: 0px 5px 15px #0005;
+	flex: 0 0 auto;
+	white-space: nowrap;
+}
+
+#menu-lateral ul {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	margin: 0px auto;
+	padding: 0px;
+	list-style: none;
+}
+
+#menu-lateral li {
+	margin: 10px;
+}
+
+#menu-lateral a{
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in-out;
+}
+
+#menu-lateral a:hover {
+	border-radius: 4px;
+	background-color: #f0c51f;
+}
+
+#contenido {
+	flex: 1 0;
+	min-width: 60px;
+	padding: 10px 20px 40px 20px;
+	margin: 20px auto;
+	background-color: #ddd;
+	border: 1px solid #777;
+	border-radius: 4px;
+	box-shadow: 0px 5px 15px #0005;
+}
+
+.lista {
+	width: inherit;
+	display: flex;
+	flex-direction: row;
+	overflow-x: scroll;
+	margin-bottom: 10px;
+}
+
+.tarjeta {
+	margin: 10px;
+	display: inline-block;
+	width: 200px;
+	background-color: #fff;
+	box-shadow: 0px 1px 5px #0006;
+	border-radius: 4px;
+}
+
+.tarjeta img {
+	width: 200px;
+	height: 160px;
+	border-radius: 4px;
+}
+
+.tarjeta #datos {
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+.tarjeta h1, .tarjeta h2{
+	font-weight: normal;
+	margin: 0px;
+	font-size: 10pt;
+	opacity: 0.9;
+	padding: 0px;
+}
+
+.tarjeta h1 {
+	opacity: 0.9;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.tarjeta #info {
+	font-size: 9pt;
+	opacity: 0.8;
+	padding: 4px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.tarjeta #estado a {
+	font-weight: bold;
+}
+
+.tarjeta .Solucionada a {
+	color: green;
+}
+
+.tarjeta .asignar a {
+	color: blue;
+}
+
+.tarjeta .progreso a {
+	color: darkorange;
+}
+
+.tarjeta .aprobar a {
+	color: darkcyan;
+}
+
+.tarjeta .Invalida a {
+	color: red;
+}
+
+#contenidoLogin {
+	flex: 1 0;
+	min-width: 60px;
+	padding: 10px 20px 100px 20px;
+	margin: 20px auto;
+	background-color: #ddd;
+	border: 1px solid #777;
+	border-radius: 4px;
+	box-shadow: 0px 5px 15px #0005;
+}
+
+#contenidoLogin td{
+	padding: 5px;
+}
+
+#formulario{
+	margin-left:40%;
+	margin-top:5%;
+	border:solid 1px;
+	border-radius: 4px;
+}
+
+#tituloLogin{
+	font-size: 20px;
+	text-align: center;
+}
+/*LOGIN FIN*/
+
+.etiqueta{
+	text-align: left;
+	width: 6em;
+	display:inline-block;
+	margin: 10px 10px 10px 10px;
+}
+
+.cuadro{
+	width: 370px;
+	padding:0px;
+}
+
+#campo textarea{
+	resize: vertical;
+}
+
+#incidencia{
+	border:solid 1px #777;
+	background-color: #ddd;
+	border-radius: 4px;
+	margin: 0px auto;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 5px 15px #0005;
+}
+
+#botones {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#botones input{
+	flex: 1 1 auto;
+	flex-basis: 50%;
+	height: 2em;
+}
+
+#registrarse{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: underline;
+}
+
+
+#tituloIncidencia{
+	text-align: center;
+}
+
+#listaIncidencia{
+	padding-bottom: 5px;
+	display: flex;
+	flex-direction: column;
+}
+#listaIncidencia.tarjeta{
+	width: 800px;
+	margin: 10px auto;
+	height: 185px;
+	display: flex;
+	flex-direction: row;
+
+}
+#listaIncidencia.tarjeta img{
+	float:left;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	width: 250px;
+	height: 180px;
+	object-fit: cover;
+}
+#listaIncidencia.tarjeta #datos p{
+	font-size: 14px;
+	margin-top:4px ;
+	margin-bottom:4px;
+}
+
+#infoIncidencia{
+	font-size: 9pt;
+	opacity: 0.8;
+	padding: 4px;
+	display: block;
+	margin: auto auto 0px 0px;
+}
+
+.listaInci {
+	width: inherit;
+	margin-bottom: 10px;
+}
+
+.estrella {
+	width: auto;
+	float: right;
+	font-size: 0;
+	display: inline-block;
+}
+.estrella a {
+	text-decoration: none;
+	display: inline-block;
+	font-size: 32px;
+	font-size: 2rem;
+	color: #888;
+}
+
+.estrella:hover a {
+	color: rgb(39, 130, 228);
+}
+
+.estrella > a:hover ~ a {
+	color: #888;
+}
+
+#ValorarIncidencia.tarjeta{
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	align-content: flex-end;
+	background: #ddd;
+	border: 1px solid #777;
+}
+#ValorarIncidencia.tarjeta img{
+	width: 600px;
+	height: 400px;
+	object-fit: cover;
+	border: 1px solid #777;
+}
+
+#valorarIncidencia #valoracion{
+	display: flex;
+}
+
+#ValorarIncidencia.tarjeta p{
+	font-size: 14px;
+	margin-top:4px ;
+	margin-bottom:4px;
+}
+
+#enviarComentario{
+	margin: 5px;
+}
+
+#RegistroForm{
+	text-align: center;
+    margin: 5px 30px 10px 30px;
+    border: 1px solid #777;
+	border-radius: 4px;
+}
+
+#pie{
+    margin: 20px;
+}
+
+#pie h1{
+	display: block;
+	margin: 30px;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 9pt;
+	color: #000a;
+	font-weight: normal;
+}
+
+
+#modificarPerfilForm {
+    margin: 5px 30px 10px 30px;
+    text-align: center;
+    border: 1px solid #777;
+	border-radius: 4px;
+    margin-right:200px;
+
+}
+
+#modificarPerfilForm table input{
+    width: 100%;
+    position: relative;
+
+}
+
+.cabecera-menu {
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+}
+
+#busqueda{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-content: center;
+	margin: 0px auto;
+	text-align: center;
+	width: 80%;
+	max-width: 600px;
+}
+
+#busqueda #texto{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-content: center;
+	margin: 0px auto;
+	text-align: center;
+	width: 100%;
+	max-width: 600px;
+}
+
+#texto #caja{
+	margin: 0px auto;
+	padding:0px 10px;
+	height: 40px;
+	flex: 1 0 80%;
+	border: 1px solid #777;
+	background-color: #fff;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in-out;
+}
+
+#texto #caja:hover{
+	border-color: #47b6ff;
+}
+
+#texto #caja:focus{
+	border-color: #3d8ee3;
+}
+
+#texto #boton{
+	margin: 0px;
+	flex: 1 0 20%;
+}
+
+#busqueda #listas{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-content: flex-start;
+	margin: 10px auto;
+	height: 40px;
+	text-align: center;
+	width: 100%;
+	max-width: 600px;
+}
+
+#busqueda select{
+	margin: 5px;
+}
+
+#contenido h1{
+	white-space: nowrap;
+}
+
+#contenido td{
+	padding: 5px;
+}
+
+#listaUsuarios.tarjeta{
+	padding: 5px;
+}
+
+#listaUsuarios.tarjeta img{
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.imagenUsuarioPerfil{
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+#datos #titulo{
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+#datos #tipo{
+	font-style: italic;
+}
+
+#loginfail{
+
+	margin-left:48%;
+
+	color: red;
+}
+#error{
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.error1{
+    border: solid 2px red;
+
+}
+
+#formulario-informe{
+	margin: 0px auto;
+	width: 600px;
+}
+
+#formulario-informe #campo{
+	margin: 0px auto;
+	width: 600px;
+}
+
+#formulario-informe input{
+	display: block;
+	margin: 10px auto 0px 0px;
+	height: 40px;
+}
+
+#formulario-informe textarea{
+	border: 1px solid #777;
+	border-radius: 4px;
+	min-width: 500px;
+	padding: 10px;
+}
+
+#informe {
+	margin: 10px 0px;
+}
+
+#informe hr{
+	width: 100%;
+	margin: 20px 0px 20px 0px;
+}
+
+#informe h1{
+	margin: 5px 0px;
+}
+
+#botonesIncidencia{
+	margin: 20px 0px 0px 0px;
+	display: flex;
+	align-content: center;
+	justify-content: space-around;
+}
+
+#botonesIncidencia input{
+	width: 200px;
+	height: 40px;
+	margin:0px;
+}
+
+#areatexto {
+	padding: 2px;
+	width: 572px;
+	max-width: 588px;
+	margin: 3px;
+	display: block;
+}
+
+#comentario{
+	border: 1px solid #888;
+	margin: 5px;
+	padding: 7px;
+	border-radius: 4px;
+	background: #eee;
+}
+#comentario b{
+	display: block;
+	height: 10px;
+}
+#separarComentarios{
+	margin: 20px auto;
+	width: 100%;
+}
